@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Spark Grid Privacy Policy: local storage, updates, support contact, and third-party providers."
+      content="Spark Grid Privacy Policy: local storage, updates, support contact, advertising-enabled versions, and third-party providers."
     />
     <title>Spark Grid — Privacy Policy</title>
     <link rel="icon" href="../assets/icon.png" type="image/png" />
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="alternate" hreflang="en" href="./" />
+    <link rel="alternate" hreflang="tr" href="tr/" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -38,12 +40,18 @@
       <header class="hero" aria-labelledby="page-title">
         <p class="eyebrow">Legal</p>
         <h1 id="page-title">Spark Grid — Privacy Policy</h1>
-        <p class="meta">Last updated: October 23, 2026</p>
+        <p class="meta">Last updated: November 5, 2026</p>
+        <nav class="lang-switch" aria-label="Language">
+          <a href="./" lang="en" hreflang="en" aria-current="page">English</a>
+          <span aria-hidden="true">·</span>
+          <a href="tr/" lang="tr" hreflang="tr">Türkçe</a>
+        </nav>
         <p class="lede">
-          This Privacy Policy explains how Spark Grid handles information in the
-          current release. It distinguishes data stored on your device, technical
-          information that may be processed when updates are delivered, and
-          information you choose to send when contacting support.
+          This Privacy Policy explains how Spark Grid handles information. It
+          distinguishes data stored on your device, technical information that
+          may be processed when updates are delivered, information you choose to
+          send when contacting support, and advertising-related processing in
+          advertising-enabled versions of the app.
         </p>
       </header>
 
@@ -72,8 +80,18 @@
             developer-owned backend.
           </li>
           <li>
-            The current release does not include an advertising SDK, a dedicated
+            Previously distributed testing binaries that predate advertising
+            integration do not include an advertising SDK, a dedicated
             third-party analytics SDK, or in-app purchases.
+          </li>
+          <li>
+            Future advertising-enabled native versions released through the
+            Apple App Store or Google Play may integrate Google Mobile Ads and
+            may offer Rewarded and Interstitial advertisements, as described in
+            the
+            <a href="#advertising">Advertising (Google Mobile Ads)</a> section.
+            Including an advertising SDK in a build does not by itself mean ads
+            are already being shown in every distributed binary.
           </li>
           <li>
             The app may use EAS Update to check for and download compatible game
@@ -84,8 +102,9 @@
         </ul>
         <p>
           Gameplay works offline. Separately, the app may use the internet when
-          checking for or downloading compatible updates, as described in the
-          update section below.
+          checking for or downloading compatible updates, and advertising-enabled
+          versions may use the internet for advertising and related consent
+          messaging where applicable.
         </p>
       </section>
 
@@ -158,8 +177,120 @@
         </p>
       </section>
 
+      <section class="content" aria-labelledby="advertising-heading" id="advertising">
+        <h2 id="advertising-heading">6. Advertising (Google Mobile Ads)</h2>
+        <p>
+          Advertising-enabled versions of Spark Grid may integrate Google Mobile
+          Ads (via the Google Mobile Ads SDK used by the app’s advertising
+          package). Those versions may offer Rewarded advertisements for optional
+          player benefits and Interstitial advertisements at controlled points in
+          the game flow. Earlier binaries that predate advertising integration do
+          not include this SDK and do not display these ads.
+        </p>
+        <p>
+          Advertising involves third-party services. Google and relevant
+          advertising partners may process technical and advertising-related
+          information. Depending on the device, platform, SDK version,
+          configuration, and applicable privacy choices, that processing may
+          include:
+        </p>
+        <ul>
+          <li>Device or advertising identifiers where accessible</li>
+          <li>
+            IP addresses and approximate location information derived from them
+          </li>
+          <li>SDK diagnostics and performance information</li>
+          <li>
+            Advertising impressions, interactions, and related events (for
+            example, taps or video views)
+          </li>
+        </ul>
+        <p>
+          The exact information processed depends on the installed SDK version,
+          platform rules, user and device settings, and advertising
+          configuration. Google’s published disclosures for the Mobile Ads SDK
+          remain the authoritative description of Google’s processing practices.
+        </p>
+        <p>
+          Local gameplay records and advertising-related processing are different
+          categories. Your local personal-best scores and preference settings are
+          not intentionally uploaded to a Spark Grid developer-owned backend as
+          part of advertising.
+        </p>
+        <p>
+          Declining consent or limiting privacy choices where offered does not
+          guarantee that all third-party technical processing related to
+          advertising delivery, measurement, fraud prevention, or limited ads
+          will stop. Ads may still appear in a more limited form depending on
+          applicable Google policies, platform rules, and configuration.
+        </p>
+        <p>
+          For information about how Google uses data from apps that use its
+          services, please review:
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://policies.google.com/technologies/partner-sites"
+              rel="noopener noreferrer"
+              >How Google uses information from sites or apps that use our
+              services</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://business.safety.google/privacy/"
+              rel="noopener noreferrer"
+              >Google Business Data Responsibility</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://policies.google.com/privacy"
+              rel="noopener noreferrer"
+              >Google Privacy Policy</a
+            >
+          </li>
+        </ul>
+
+        <h3 id="consent-heading">Consent and privacy choices (UMP)</h3>
+        <p>
+          Where required by applicable law and Google’s EU User Consent Policy
+          (for example, for users in the European Economic Area, the United
+          Kingdom, and Switzerland), advertising-enabled versions are intended to
+          present a consent message through Google’s User Messaging Platform
+          (UMP) once that messaging has been published and the corresponding app
+          release includes consent handling. Users may then be offered choices
+          such as consenting, declining consent, or managing privacy options, as
+          presented by the applicable message.
+        </p>
+        <p>
+          This website policy does not claim that the AdMob GDPR consent message
+          has already been published, or that consent UI already appears in
+          currently distributed older binaries. Those capabilities apply to
+          advertising-enabled releases when they are implemented and released.
+        </p>
+        <p>
+          Some privacy message configurations require a publisher-provided
+          privacy-options entry point. In versions where that entry point has
+          been implemented in the app (for example, in Settings) and where the
+          privacy framework indicates it is applicable, you may use it to review
+          or change privacy choices. Availability depends on the installed
+          version, region, and UMP status.
+        </p>
+        <p>
+          Google UMP consent messaging is separate from Apple’s App Tracking
+          Transparency (ATT) framework on iOS. ATT, when used, concerns
+          permission to track across other companies’ apps and websites or to
+          access the advertising identifier under Apple’s rules. This policy does
+          not assert that an ATT prompt is shown in every build; whether such a
+          prompt appears depends on platform requirements and the specific
+          advertising-enabled product configuration.
+        </p>
+      </section>
+
       <section class="content" aria-labelledby="third-party-heading">
-        <h2 id="third-party-heading">6. Third-party providers and platforms</h2>
+        <h2 id="third-party-heading">7. Third-party providers and platforms</h2>
         <p>
           Spark Grid is distributed through platforms such as the Apple App
           Store and Google Play. Those platforms, and infrastructure providers
@@ -168,15 +299,18 @@
           policies. That processing is outside Spark Grid’s direct control.
         </p>
         <p>
-          The current release does not embed an advertising SDK, a dedicated
-          third-party analytics SDK, or in-app purchases. Platform-level
-          services provided by Apple, Google, or Expo remain subject to those
-          companies’ policies.
+          Advertising-enabled versions may embed Google Mobile Ads, as described
+          in the
+          <a href="#advertising">Advertising (Google Mobile Ads)</a> section.
+          Versions without advertising integration do not embed an advertising
+          SDK. Spark Grid does not currently include a dedicated third-party
+          analytics SDK or in-app purchases. Platform-level services provided by
+          Apple, Google, or Expo remain subject to those companies’ policies.
         </p>
       </section>
 
       <section class="content" aria-labelledby="website-heading">
-        <h2 id="website-heading">7. This website (GitHub Pages)</h2>
+        <h2 id="website-heading">8. This website (GitHub Pages)</h2>
         <p>
           These Support and Privacy pages are hosted as a static website on
           GitHub Pages. When you visit the site, GitHub may process ordinary
@@ -187,25 +321,40 @@
       </section>
 
       <section class="content" aria-labelledby="children-heading">
-        <h2 id="children-heading">8. Children</h2>
+        <h2 id="children-heading">9. Children</h2>
         <p>
           Spark Grid does not require an account. Gameplay records described in
-          this policy are stored locally on the device. If you have questions
-          about a child’s use of the app, contact
+          this policy are stored locally on the device. This policy does not
+          assert a finalized child-directed product classification. If you have
+          questions about a child’s use of the app, contact
           <a href="mailto:caliskanemrah@gmail.com">caliskanemrah@gmail.com</a>.
         </p>
       </section>
 
       <section class="content" aria-labelledby="rights-heading">
-        <h2 id="rights-heading">9. Your questions and choices</h2>
+        <h2 id="rights-heading">10. Your questions, choices, and privacy preferences</h2>
         <p>
           You can ask questions about this policy, request clarification about
-          local storage or support email handling, or ask us to delete support
-          correspondence we hold, by emailing
-          <a href="mailto:caliskanemrah@gmail.com">caliskanemrah@gmail.com</a>. We will respond to
-          reasonable inquiries. Some platform or provider records (for example,
-          Expo update delivery logs, or Apple / Google store records) are
-          controlled by those providers.
+          local storage, support email handling, or advertising disclosures, or
+          ask us to delete support correspondence we hold, by emailing
+          <a href="mailto:caliskanemrah@gmail.com">caliskanemrah@gmail.com</a>.
+          We will respond to reasonable inquiries.
+        </p>
+        <p>
+          Some platform or provider records (for example, Expo update delivery
+          logs, Apple or Google store records, or advertising and consent records
+          managed by Google or other advertising participants) are controlled by
+          those providers. Spark Grid cannot promise deletion of, or full control
+          over, records held independently by Google, Apple, Expo, or other
+          third parties.
+        </p>
+        <p>
+          Device and account settings offered by Apple or Google (for example, ad
+          personalization or advertising-identifier controls) may also affect
+          advertising. Where an in-app privacy-options control is available in
+          your installed advertising-enabled version, you may use it as described
+          in the
+          <a href="#advertising">Advertising</a> section.
         </p>
         <p>
           To remove local game data on your device, uninstall the app or clear
@@ -214,7 +363,7 @@
       </section>
 
       <section class="content" aria-labelledby="changes-heading">
-        <h2 id="changes-heading">10. Changes to this policy</h2>
+        <h2 id="changes-heading">11. Changes to this policy</h2>
         <p>
           We may update this Privacy Policy when the product, hosting, or legal
           requirements change. The “Last updated” date at the top of this page
@@ -224,7 +373,7 @@
       </section>
 
       <section class="content" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">11. Contact</h2>
+        <h2 id="contact-heading">12. Contact</h2>
         <p>Publisher: Emrah Caliskan</p>
         <p>
           Email:
@@ -233,6 +382,12 @@
         <p>
           Game help:
           <a href="../support/">Support</a>
+        </p>
+        <p>
+          Language:
+          <a href="./" hreflang="en" lang="en">English</a>
+          ·
+          <a href="tr/" hreflang="tr" lang="tr">Türkçe</a>
         </p>
       </section>
     </main>

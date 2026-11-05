@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Spark Grid Gizlilik Politikası: yerel depolama, güncellemeler, destek iletişimi, reklam içeren sürümler ve üçüncü taraf sağlayıcılar."
+    />
+    <title>Spark Grid — Gizlilik Politikası</title>
+    <link rel="icon" href="../../assets/icon.png" type="image/png" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="alternate" hreflang="en" href="../" />
+    <link rel="alternate" hreflang="tr" href="./" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">İçeriğe atla</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../../">
+          <img
+            class="brand__icon"
+            src="../../assets/icon.png"
+            width="40"
+            height="40"
+            alt=""
+          />
+          <span class="brand__name">Spark Grid</span>
+        </a>
+        <nav class="nav" aria-label="Ana menü">
+          <a href="../../">Ana Sayfa</a>
+          <a href="../../support/">Destek</a>
+          <a href="../" aria-current="page">Gizlilik Politikası</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <header class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Yasal</p>
+        <h1 id="page-title">Spark Grid — Gizlilik Politikası</h1>
+        <p class="meta">Son güncelleme: 5 Kasım 2026</p>
+        <nav class="lang-switch" aria-label="Dil">
+          <a href="../" lang="en" hreflang="en">English</a>
+          <span aria-hidden="true">·</span>
+          <a href="./" lang="tr" hreflang="tr" aria-current="page">Türkçe</a>
+        </nav>
+        <p class="lede">
+          Bu Gizlilik Politikası, Spark Grid’in bilgileri nasıl işlediğini
+          açıklar. Cihazınızda saklanan veriler, güncelleme teslimi sırasında
+          işlenebilecek teknik bilgiler, destek için gönüllü olarak gönderdiğiniz
+          bilgiler ve reklam içeren uygulama sürümlerindeki reklamla ilgili
+          işlemler birbirinden ayrılır.
+        </p>
+      </header>
+
+      <section class="content" aria-labelledby="who-heading">
+        <h2 id="who-heading">1. Kimiz</h2>
+        <p>
+          Spark Grid, Emrah Caliskan tarafından yayımlanan tek oyunculu bir
+          bulmaca oyunudur.
+        </p>
+        <p>
+          Gizlilik soruları:
+          <a href="mailto:caliskanemrah@gmail.com">caliskanemrah@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="overview-heading">
+        <h2 id="overview-heading">2. Genel bakış</h2>
+        <ul>
+          <li>Spark Grid tek oyunculu bir bulmaca oyunudur.</li>
+          <li>Oyuncu hesabı veya oturum açma zorunluluğu yoktur.</li>
+          <li>
+            Kişisel en iyi skorlar ve tercih ayarları cihazınızda yerel olarak
+            saklanır.
+          </li>
+          <li>
+            Bu yerel oyun kayıtları, geliştiriciye ait bir arka uca kasıtlı
+            olarak yüklenmez.
+          </li>
+          <li>
+            Reklam entegrasyonundan önce dağıtılmış test ikili dosyaları reklam
+            SDK’sı, özel bir üçüncü taraf analitik SDK’sı veya uygulama içi satın
+            alma içermez.
+          </li>
+          <li>
+            Apple App Store veya Google Play üzerinden yayımlanacak gelecek
+            reklam içeren yerel sürümler Google Mobile Ads’i entegre edebilir ve
+            Ödüllü (Rewarded) ile Geçiş (Interstitial) reklamları sunabilir;
+            ayrıntılar
+            <a href="#advertising">Reklamlar (Google Mobile Ads)</a> bölümündedir.
+            Bir derlemeye reklam SDK’sının eklenmesi, tek başına her dağıtılmış
+            ikili dosyada reklamların hâlihazırda gösterildiği anlamına gelmez.
+          </li>
+          <li>
+            Uygulama, uyumlu oyun güncellemelerini Expo sunucularından kontrol
+            etmek ve indirmek için EAS Update kullanabilir. Bu süreç, aşağıda ve
+            Expo’nun kendi gizlilik politikasında açıklandığı gibi Expo
+            tarafından işlenen teknik bilgileri içerebilir.
+          </li>
+        </ul>
+        <p>
+          Oyun çevrimdışı çalışır. Ayrı olarak uygulama, uyumlu güncellemeleri
+          kontrol ederken veya indirirken internet kullanabilir; reklam içeren
+          sürümler ise reklam ve ilgili onay mesajları için (uygulandığı
+          durumlarda) internet kullanabilir.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="local-heading">
+        <h2 id="local-heading">3. Cihazınızda saklanan bilgiler</h2>
+        <p>
+          Aşağıdaki bilgiler, ilerlemenizi ve tercihlerinizi hatırlamak için
+          cihazınızda yerel olarak saklanır (örneğin AsyncStorage kullanılarak):
+        </p>
+        <ul>
+          <li>Kişisel en iyi skorlar</li>
+          <li>Dil tercihi</li>
+          <li>Ses efektleri tercihi</li>
+          <li>Dokunsal geri bildirim (haptics) tercihi</li>
+        </ul>
+        <p>
+          Bu yerel oyun kayıtları, oynanış ve ayarlar için cihazda tutulur. Spark
+          Grid’e ait bir geliştirici arka ucuna kasıtlı olarak yüklenmezler.
+        </p>
+        <p>
+          Yerel olarak saklanan oyun kayıtlarını genellikle uygulamayı kaldırarak
+          veya cihaz ayarlarından uygulama depolamasını temizleyerek
+          silebilirsiniz. Tam adımlar işletim sisteminize ve cihazınıza bağlıdır.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="updates-heading">
+        <h2 id="updates-heading">4. Uygulama güncellemeleri (EAS Update / Expo)</h2>
+        <p>
+          Spark Grid, uyumlu oyun güncellemelerini Expo sunucularından kontrol
+          etmek ve indirmek için EAS Update kullanır. Bu olduğunda Expo,
+          güncelleme teslimiyle ilişkili teknik bilgileri işleyebilir. Expo’nun
+          gizlilik materyallerine göre bunlar; cihaz işletim sistemi, rastgele
+          güncelleme ile ilgili tanımlayıcılar ve IP adresi gibi ağ bilgilerini
+          içerebilir.
+        </p>
+        <p>
+          Expo’nun işlemleri Expo’nun kendi politikalarına tabidir. Lütfen
+          inceleyin:
+          <a href="https://expo.dev/privacy" rel="noopener noreferrer"
+            >https://expo.dev/privacy</a
+          >.
+        </p>
+        <p>
+          Expo gibi harici sağlayıcılar teknik bilgileri kendi geçerli
+          politikalarına göre işler ve saklar. Uygulamaları hakkında ayrıntı için
+          lütfen bu sağlayıcıların yayımlanmış gizlilik materyallerine bakın.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="support-heading">
+        <h2 id="support-heading">5. Destek için gönderdiğiniz bilgiler</h2>
+        <p>
+          Destek ekibine e-posta gönderirseniz, gönüllü olarak iletişim
+          bilgilerinizi (örneğin e-posta adresiniz) ve tanısal açıklamaları
+          (örneğin cihaz türü, işletim sistemi, uygulama sürümü ve sorunu yeniden
+          üretme adımları) sağlayabilirsiniz. Bu bilgileri yalnızca talebinize
+          yanıt vermek ve bildirdiğiniz sorunu incelemek için kullanırız.
+        </p>
+        <p>
+          Destek e-postaları, talebinize yanıt vermek, ilgili takip işlerini
+          tamamlamak ve destek yazışmaları için olağan kayıt tutma ihtiyaçlarını
+          karşılamak için makul ölçüde gerekli olduğu sürece saklanır.
+        </p>
+        <p>
+          Destek ve gizlilik soruları için iletişim:
+          <a href="mailto:caliskanemrah@gmail.com">caliskanemrah@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="advertising-heading" id="advertising">
+        <h2 id="advertising-heading">6. Reklamlar (Google Mobile Ads)</h2>
+        <p>
+          Spark Grid’in reklam içeren sürümleri Google Mobile Ads’i (uygulamanın
+          reklam paketinin kullandığı Google Mobile Ads SDK aracılığıyla)
+          entegre edebilir. Bu sürümler, isteğe bağlı oyuncu avantajları için
+          Ödüllü reklamlar ve oyun akışının kontrollü noktalarında Geçiş
+          reklamları sunabilir. Reklam entegrasyonundan önceki ikili dosyalar bu
+          SDK’yı içermez ve bu reklamları göstermez.
+        </p>
+        <p>
+          Reklamcılık üçüncü taraf hizmetlerini içerir. Google ve ilgili reklam
+          ortakları teknik ve reklamla ilgili bilgileri işleyebilir. Cihaza,
+          platforma, SDK sürümüne, yapılandırmaya ve geçerli gizlilik tercihlerine
+          bağlı olarak bu işlem şunları içerebilir:
+        </p>
+        <ul>
+          <li>Erişilebilir olduğu durumlarda cihaz veya reklam tanımlayıcıları</li>
+          <li>
+            IP adresleri ve bunlardan türetilen yaklaşık konum bilgisi
+          </li>
+          <li>SDK tanı ve performans bilgileri</li>
+          <li>
+            Reklam gösterimleri, etkileşimler ve ilgili olaylar (örneğin dokunma
+            veya video izleme)
+          </li>
+        </ul>
+        <p>
+          İşlenen bilgilerin kesin kapsamı; yüklü SDK sürümüne, platform
+          kurallarına, kullanıcı ve cihaz ayarlarına ile reklam yapılandırmasına
+          bağlıdır. Google’ın Mobile Ads SDK için yayımladığı açıklamalar,
+          Google’ın işleme uygulamalarının yetkili kaynağıdır.
+        </p>
+        <p>
+          Yerel oynanış kayıtları ile reklamla ilgili işlemler farklı
+          kategorilerdir. Yerel kişisel en iyi skorlarınız ve tercih ayarlarınız,
+          reklamcılığın bir parçası olarak Spark Grid’e ait bir geliştirici arka
+          ucuna kasıtlı olarak yüklenmez.
+        </p>
+        <p>
+          Onayı reddetmek veya sunulan gizlilik tercihlerini sınırlamak, reklam
+          teslimi, ölçüm, dolandırıcılık önleme veya sınırlı reklamlarla ilgili
+          tüm üçüncü taraf teknik işlemlerin duracağını garanti etmez. Geçerli
+          Google politikalarına, platform kurallarına ve yapılandırmaya bağlı
+          olarak reklamlar daha sınırlı bir biçimde hâlâ görünebilir.
+        </p>
+        <p>
+          Google’ın hizmetlerini kullanan uygulamalardan gelen verileri nasıl
+          kullandığı hakkında bilgi için lütfen şunları inceleyin:
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://policies.google.com/technologies/partner-sites"
+              rel="noopener noreferrer"
+              >Google’ın ortak siteler veya uygulamalardan gelen bilgileri
+              kullanımı</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://business.safety.google/privacy/"
+              rel="noopener noreferrer"
+              >Google Business Data Responsibility</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://policies.google.com/privacy"
+              rel="noopener noreferrer"
+              >Google Gizlilik Politikası</a
+            >
+          </li>
+        </ul>
+
+        <h3 id="consent-heading">Onay ve gizlilik tercihleri (UMP)</h3>
+        <p>
+          Geçerli hukuk ve Google’ın AB Kullanıcı Onayı Politikası’nın
+          gerektirdiği durumlarda (örneğin Avrupa Ekonomik Alanı, Birleşik
+          Krallık ve İsviçre’deki kullanıcılar için), reklam içeren sürümlerin,
+          ilgili onay mesajı yayımlandıktan ve karşılık gelen uygulama sürümü
+          onay işlemeyi içerdiğinde Google’ın User Messaging Platform (UMP)
+          aracılığıyla bir onay mesajı sunması amaçlanır. Kullanıcılara daha
+          sonra, ilgili mesajda sunulduğu şekilde onay verme, onayı reddetme veya
+          gizlilik seçeneklerini yönetme gibi tercihler sunulabilir.
+        </p>
+        <p>
+          Bu web sitesi politikası, AdMob GDPR onay mesajının hâlihazırda
+          yayımlandığını veya onay arayüzünün şu anda dağıtılan eski ikili
+          dosyalarda göründüğünü iddia etmez. Bu özellikler, uygulandıkları ve
+          yayımlandıkları reklam içeren sürümler için geçerlidir.
+        </p>
+        <p>
+          Bazı gizlilik mesajı yapılandırmaları, yayımcı tarafından sağlanan bir
+          gizlilik seçenekleri giriş noktası gerektirir. Bu giriş noktasının
+          uygulamada uygulandığı sürümlerde (örneğin Ayarlar içinde) ve gizlilik
+          çerçevesinin bunun geçerli olduğunu belirttiği durumlarda, gizlilik
+          tercihlerinizi gözden geçirmek veya değiştirmek için bunu
+          kullanabilirsiniz. Kullanılabilirlik yüklü sürüme, bölgeye ve UMP
+          durumuna bağlıdır.
+        </p>
+        <p>
+          Google UMP onay mesajları, iOS’taki Apple App Tracking Transparency
+          (ATT) çerçevesinden ayrıdır. ATT kullanıldığında, Apple kuralları
+          kapsamında diğer şirketlerin uygulamaları ve web siteleri arasında
+          izleme izni veya reklam tanımlayıcısına erişimle ilgilidir. Bu politika,
+          her derlemede bir ATT isteminin gösterildiğini iddia etmez; böyle bir
+          istemin görünüp görünmeyeceği platform gereksinimlerine ve belirli
+          reklam içeren ürün yapılandırmasına bağlıdır.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="third-party-heading">
+        <h2 id="third-party-heading">7. Üçüncü taraf sağlayıcılar ve platformlar</h2>
+        <p>
+          Spark Grid; Apple App Store ve Google Play gibi platformlar üzerinden
+          dağıtılır. Bu platformlar ile uygulamayı veya güncellemeleri teslim
+          eden altyapı sağlayıcıları (EAS Update için Expo dahil), kendi şartları
+          ve gizlilik politikaları kapsamında bilgi işleyebilir. Bu işlem Spark
+          Grid’in doğrudan kontrolü dışındadır.
+        </p>
+        <p>
+          Reklam içeren sürümler,
+          <a href="#advertising">Reklamlar (Google Mobile Ads)</a> bölümünde
+          açıklandığı gibi Google Mobile Ads’i gömebilir. Reklam entegrasyonu
+          olmayan sürümler bir reklam SDK’sı içermez. Spark Grid şu anda özel bir
+          üçüncü taraf analitik SDK’sı veya uygulama içi satın alma içermez.
+          Apple, Google veya Expo tarafından sağlanan platform düzeyindeki
+          hizmetler bu şirketlerin politikalarına tabidir.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="website-heading">
+        <h2 id="website-heading">8. Bu web sitesi (GitHub Pages)</h2>
+        <p>
+          Bu Destek ve Gizlilik sayfaları GitHub Pages üzerinde statik bir web
+          sitesi olarak barındırılır. Siteyi ziyaret ettiğinizde GitHub, GitHub
+          politikaları kapsamında olağan web sitesi bağlantı bilgilerini
+          (örneğin IP adresi ve standart sunucu günlükleri) işleyebilir. Bu
+          statik site; analitik çerezleri, reklam izleyicileri veya kişisel veri
+          toplayan formlar kullanmaz.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="children-heading">
+        <h2 id="children-heading">9. Çocuklar</h2>
+        <p>
+          Spark Grid hesap gerektirmez. Bu politikada açıklanan oynanış kayıtları
+          cihazda yerel olarak saklanır. Bu politika, kesinleşmiş bir
+          çocuklara yönelik ürün sınıflandırması ileri sürmez. Bir çocuğun
+          uygulamayı kullanımı hakkında sorularınız varsa
+          <a href="mailto:caliskanemrah@gmail.com">caliskanemrah@gmail.com</a>
+          adresine yazın.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="rights-heading">
+        <h2 id="rights-heading">
+          10. Sorularınız, tercihleriniz ve gizlilik seçenekleriniz
+        </h2>
+        <p>
+          Bu politika hakkında soru sorabilir; yerel depolama, destek e-postası
+          işleme veya reklam açıklamaları hakkında netlik isteyebilir; veya
+          elimizde tuttuğumuz destek yazışmalarının silinmesini
+          <a href="mailto:caliskanemrah@gmail.com">caliskanemrah@gmail.com</a>
+          adresine e-posta göndererek talep edebilirsiniz. Makul taleplere yanıt
+          veririz.
+        </p>
+        <p>
+          Bazı platform veya sağlayıcı kayıtları (örneğin Expo güncelleme teslim
+          günlükleri, Apple veya Google mağaza kayıtları ya da Google veya diğer
+          reklam katılımcıları tarafından yönetilen reklam ve onay kayıtları) bu
+          sağlayıcıların kontrolündedir. Spark Grid; Google, Apple, Expo veya
+          diğer üçüncü tarafların bağımsız olarak tuttuğu kayıtların silinmesini
+          veya bunlar üzerinde tam kontrolü vaat edemez.
+        </p>
+        <p>
+          Apple veya Google’ın sunduğu cihaz ve hesap ayarları (örneğin reklam
+          kişiselleştirme veya reklam tanımlayıcısı kontrolleri) reklamcılığı
+          etkileyebilir. Yüklü reklam içeren sürümünüzde uygulama içi bir
+          gizlilik seçenekleri denetimi varsa,
+          <a href="#advertising">Reklamlar</a> bölümünde açıklandığı şekilde
+          bunu kullanabilirsiniz.
+        </p>
+        <p>
+          Cihazınızdaki yerel oyun verilerini kaldırmak için uygulamayı kaldırın
+          veya cihazınızın desteklediği şekilde uygulama depolamasını temizleyin.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="changes-heading">
+        <h2 id="changes-heading">11. Bu politikadaki değişiklikler</h2>
+        <p>
+          Ürün, barındırma veya yasal gereksinimler değiştiğinde bu Gizlilik
+          Politikasını güncelleyebiliriz. Değişiklikler yayımlandığında sayfanın
+          üstündeki “Son güncelleme” tarihi revize edilir. Bir güncellemeden
+          sonra Spark Grid’i kullanmaya devam etmeniz, gözden geçirilmiş
+          politikayı incelemeniz gerektiği anlamına gelir.
+        </p>
+      </section>
+
+      <section class="content" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">12. İletişim</h2>
+        <p>Yayımcı: Emrah Caliskan</p>
+        <p>
+          E-posta:
+          <a href="mailto:caliskanemrah@gmail.com">caliskanemrah@gmail.com</a>
+        </p>
+        <p>
+          Oyun yardımı:
+          <a href="../../support/">Destek</a>
+        </p>
+        <p>
+          Dil:
+          <a href="../" hreflang="en" lang="en">English</a>
+          ·
+          <a href="./" hreflang="tr" lang="tr">Türkçe</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <nav aria-label="Altbilgi">
+          <a href="../../">Ana Sayfa</a>
+          <a href="../../support/">Destek</a>
+          <a href="../">Gizlilik Politikası</a>
+        </nav>
+        <p>Spark Grid · Yayımcı: Emrah Caliskan</p>
+      </div>
+    </footer>
+  </body>
+</html>

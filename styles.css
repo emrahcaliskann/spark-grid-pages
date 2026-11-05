@@ -251,6 +251,33 @@ h3 {
   font-size: 0.95rem;
 }
 
+.lang-switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.55rem;
+  margin: 0;
+  max-width: min(100%, var(--max-width));
+  font-size: 0.95rem;
+  font-weight: 560;
+}
+
+.lang-switch a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.lang-switch a:hover,
+.lang-switch a[aria-current="page"] {
+  color: var(--heading);
+}
+
+.lang-switch a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.28em;
+}
+
 .panel {
   box-sizing: border-box;
   width: 100%;

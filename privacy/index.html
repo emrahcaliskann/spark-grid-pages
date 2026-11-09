@@ -40,7 +40,7 @@
       <header class="hero" aria-labelledby="page-title">
         <p class="eyebrow">Legal</p>
         <h1 id="page-title">Spark Grid — Privacy Policy</h1>
-        <p class="meta">Last updated: November 5, 2026</p>
+        <p class="meta">Last updated: November 9, 2026</p>
         <nav class="lang-switch" aria-label="Language">
           <a href="./" lang="en" hreflang="en" aria-current="page">English</a>
           <span aria-hidden="true">·</span>
@@ -85,13 +85,18 @@
             third-party analytics SDK, or in-app purchases.
           </li>
           <li>
-            Future advertising-enabled native versions released through the
-            Apple App Store or Google Play may integrate Google Mobile Ads and
-            may offer Rewarded and Interstitial advertisements, as described in
-            the
+            Advertising-enabled native builds of Spark Grid integrate Google
+            Mobile Ads and can present Rewarded and Interstitial advertisements,
+            as described in the
             <a href="#advertising">Advertising (Google Mobile Ads)</a> section.
-            Including an advertising SDK in a build does not by itself mean ads
-            are already being shown in every distributed binary.
+            As of app version 1.0.1, store-testing distributions on Apple
+            TestFlight and Google Play closed testing include this SDK and those
+            ad formats. Older binaries that predate advertising integration do
+            not. A production App Store or Google Play release that uses live
+            advertising configuration is a separate distribution from store
+            testing; including an advertising SDK in a build does not by itself
+            mean every distributed binary shows ads, or that production live ads
+            are enabled.
           </li>
           <li>
             The app may use EAS Update to check for and download compatible game
@@ -101,10 +106,9 @@
           </li>
         </ul>
         <p>
-          Gameplay works offline. Separately, the app may use the internet when
-          checking for or downloading compatible updates, and advertising-enabled
-          versions may use the internet for advertising and related consent
-          messaging where applicable.
+          Gameplay works offline. The app may use the internet to check for or
+          download compatible updates. Advertising-enabled versions may also
+          connect to advertising and consent-messaging services where applicable.
         </p>
       </section>
 
@@ -180,11 +184,14 @@
       <section class="content" aria-labelledby="advertising-heading" id="advertising">
         <h2 id="advertising-heading">6. Advertising (Google Mobile Ads)</h2>
         <p>
-          Advertising-enabled versions of Spark Grid may integrate Google Mobile
-          Ads (via the Google Mobile Ads SDK used by the app’s advertising
-          package). Those versions may offer Rewarded advertisements for optional
-          player benefits and Interstitial advertisements at controlled points in
-          the game flow. Earlier binaries that predate advertising integration do
+          Advertising-enabled versions of Spark Grid integrate Google Mobile Ads
+          (via the Google Mobile Ads SDK used by the app’s advertising package)
+          and can offer Rewarded advertisements for optional player benefits and
+          Interstitial advertisements at controlled points in the game flow.
+          Spark Grid 1.0.1 TestFlight and Google Play Closed Testing builds include
+          this SDK and support those ad formats. Production live advertising is a
+          separate release and is not implied merely because store-testing builds
+          contain the SDK. Earlier binaries that predate advertising integration do
           not include this SDK and do not display these ads.
         </p>
         <p>
@@ -255,37 +262,39 @@
 
         <h3 id="consent-heading">Consent and privacy choices (UMP)</h3>
         <p>
-          Where required by applicable law and Google’s EU User Consent Policy
-          (for example, for users in the European Economic Area, the United
-          Kingdom, and Switzerland), advertising-enabled versions are intended to
-          present a consent message through Google’s User Messaging Platform
-          (UMP) once that messaging has been published and the corresponding app
-          release includes consent handling. Users may then be offered choices
-          such as consenting, declining consent, or managing privacy options, as
-          presented by the applicable message.
+          Advertising-enabled versions include Google’s User Messaging Platform
+          (UMP) consent-handling APIs. Where required by applicable law and
+          Google’s EU User Consent Policy (for example, for users in the European
+          Economic Area, the United Kingdom, and Switzerland), those versions are
+          intended to present a consent message through UMP once the corresponding
+          AdMob consent message has been published for the app and the installed
+          release can receive it. Users may then be offered choices such as
+          consenting, declining consent, or managing privacy options, as presented
+          by the applicable message.
         </p>
         <p>
           This website policy does not claim that the AdMob GDPR consent message
-          has already been published, or that consent UI already appears in
-          currently distributed older binaries. Those capabilities apply to
-          advertising-enabled releases when they are implemented and released.
+          has already been published, or that a consent form already appears for
+          every user or every distributed binary. SDK integration and UMP API
+          wiring are not the same as a published consent message or a visible
+          consent form.
         </p>
         <p>
           Some privacy message configurations require a publisher-provided
-          privacy-options entry point. In versions where that entry point has
-          been implemented in the app (for example, in Settings) and where the
-          privacy framework indicates it is applicable, you may use it to review
-          or change privacy choices. Availability depends on the installed
-          version, region, and UMP status.
+          privacy-options entry point. In versions where that entry point has been
+          implemented in the app (for example, in Settings) and where the privacy
+          framework indicates it is required, you may use it to review or change
+          privacy choices. Availability depends on the installed version, region,
+          and UMP status; the control is not shown when it is not required.
         </p>
         <p>
           Google UMP consent messaging is separate from Apple’s App Tracking
-          Transparency (ATT) framework on iOS. ATT, when used, concerns
-          permission to track across other companies’ apps and websites or to
-          access the advertising identifier under Apple’s rules. This policy does
-          not assert that an ATT prompt is shown in every build; whether such a
-          prompt appears depends on platform requirements and the specific
-          advertising-enabled product configuration.
+          Transparency (ATT) framework on iOS. ATT, when used, concerns permission
+          to track across other companies’ apps and websites or to access the
+          advertising identifier under Apple’s rules. This policy does not assert
+          that an ATT prompt is shown in every build; whether such a prompt appears
+          depends on platform requirements and the specific advertising-enabled
+          product configuration.
         </p>
       </section>
 

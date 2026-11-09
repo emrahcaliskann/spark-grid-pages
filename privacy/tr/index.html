@@ -40,7 +40,7 @@
       <header class="hero" aria-labelledby="page-title">
         <p class="eyebrow">Yasal</p>
         <h1 id="page-title">Spark Grid — Gizlilik Politikası</h1>
-        <p class="meta">Son güncelleme: 5 Kasım 2026</p>
+        <p class="meta">Son güncelleme: 9 Kasım 2026</p>
         <nav class="lang-switch" aria-label="Dil">
           <a href="../" lang="en" hreflang="en">English</a>
           <span aria-hidden="true">·</span>
@@ -86,13 +86,17 @@
             alma içermez.
           </li>
           <li>
-            Apple App Store veya Google Play üzerinden yayımlanacak gelecek
-            reklam içeren yerel sürümler Google Mobile Ads’i entegre edebilir ve
-            Ödüllü (Rewarded) ile Geçiş (Interstitial) reklamları sunabilir;
-            ayrıntılar
+            Spark Grid’in reklam içeren yerel derlemeleri Google Mobile Ads’i
+            entegre eder ve Ödüllü (Rewarded) ile Geçiş (Interstitial) reklamları
+            sunabilir; ayrıntılar
             <a href="#advertising">Reklamlar (Google Mobile Ads)</a> bölümündedir.
-            Bir derlemeye reklam SDK’sının eklenmesi, tek başına her dağıtılmış
-            ikili dosyada reklamların hâlihazırda gösterildiği anlamına gelmez.
+            Uygulama sürümü 1.0.1 itibarıyla Apple TestFlight ve Google Play kapalı
+            test dağıtımları bu SDK’yı ve bu reklam biçimlerini içerir. Reklam
+            entegrasyonundan önceki ikili dosyalar içermez. Canlı reklam
+            yapılandırması kullanan bir App Store veya Google Play üretim sürümü,
+            mağaza testinden ayrı bir dağıtımdır; bir derlemeye reklam SDK’sının
+            eklenmesi, tek başına her dağıtılmış ikili dosyada reklam gösterildiği
+            veya üretimde canlı reklamların açık olduğu anlamına gelmez.
           </li>
           <li>
             Uygulama, uyumlu oyun güncellemelerini Expo sunucularından kontrol
@@ -104,8 +108,9 @@
         <p>
           Oyun çevrimdışı çalışır. Ayrı olarak uygulama, uyumlu güncellemeleri
           kontrol ederken veya indirirken internet kullanabilir; reklam içeren
-          sürümler ise reklam ve ilgili onay mesajları için (uygulandığı
-          durumlarda) internet kullanabilir.
+          sürümler ise reklam SDK etkinliği ve, yayımlanmış bir onay mesajı ile
+          geçerli hukukun gerektirdiği durumlarda, ilgili onay mesajları için
+          internet kullanabilir.
         </p>
       </section>
 
@@ -181,10 +186,16 @@
         <p>
           Spark Grid’in reklam içeren sürümleri Google Mobile Ads’i (uygulamanın
           reklam paketinin kullandığı Google Mobile Ads SDK aracılığıyla)
-          entegre edebilir. Bu sürümler, isteğe bağlı oyuncu avantajları için
-          Ödüllü reklamlar ve oyun akışının kontrollü noktalarında Geçiş
-          reklamları sunabilir. Reklam entegrasyonundan önceki ikili dosyalar bu
-          SDK’yı içermez ve bu reklamları göstermez.
+          entegre eder; isteğe bağlı oyuncu avantajları için Ödüllü reklamlar ve
+          oyun akışının kontrollü noktalarında Geçiş reklamları sunabilir.
+          Uygulama sürümü 1.0.1 için TestFlight ve Google Play kapalı test
+          derlemeleri, yayımcıya ait reklam birimlerini kullanan bir mağaza-test
+          reklam yapılandırması altında bu SDK’yı ve bu biçimleri içerir. Yerel
+          QA için kullanılan geliştirme derlemeleri bunun yerine Google’ın
+          demo/test reklam birimlerini kullanabilir. Üretimde canlı reklam
+          yapılandırması mağaza testinden ayrıdır ve mağaza-test ikili dosyalarının
+          SDK içermesi tek başına bunu ima etmez. Reklam entegrasyonundan önceki
+          ikili dosyalar bu SDK’yı içermez ve bu reklamları göstermez.
         </p>
         <p>
           Reklamcılık üçüncü taraf hizmetlerini içerir. Google ve ilgili reklam
@@ -253,29 +264,31 @@
 
         <h3 id="consent-heading">Onay ve gizlilik tercihleri (UMP)</h3>
         <p>
-          Geçerli hukuk ve Google’ın AB Kullanıcı Onayı Politikası’nın
-          gerektirdiği durumlarda (örneğin Avrupa Ekonomik Alanı, Birleşik
-          Krallık ve İsviçre’deki kullanıcılar için), reklam içeren sürümlerin,
-          ilgili onay mesajı yayımlandıktan ve karşılık gelen uygulama sürümü
-          onay işlemeyi içerdiğinde Google’ın User Messaging Platform (UMP)
-          aracılığıyla bir onay mesajı sunması amaçlanır. Kullanıcılara daha
-          sonra, ilgili mesajda sunulduğu şekilde onay verme, onayı reddetme veya
-          gizlilik seçeneklerini yönetme gibi tercihler sunulabilir.
+          Reklam içeren sürümler Google’ın User Messaging Platform (UMP) onay
+          işleme API’lerini içerir. Geçerli hukuk ve Google’ın AB Kullanıcı Onayı
+          Politikası’nın gerektirdiği durumlarda (örneğin Avrupa Ekonomik Alanı,
+          Birleşik Krallık ve İsviçre’deki kullanıcılar için), ilgili AdMob onay
+          mesajı uygulama için yayımlandıktan ve yüklü sürüm bunu alabildikten
+          sonra bu sürümlerin UMP aracılığıyla bir onay mesajı sunması amaçlanır.
+          Kullanıcılara daha sonra, ilgili mesajda sunulduğu şekilde onay verme,
+          onayı reddetme veya gizlilik seçeneklerini yönetme gibi tercihler
+          sunulabilir.
         </p>
         <p>
           Bu web sitesi politikası, AdMob GDPR onay mesajının hâlihazırda
-          yayımlandığını veya onay arayüzünün şu anda dağıtılan eski ikili
-          dosyalarda göründüğünü iddia etmez. Bu özellikler, uygulandıkları ve
-          yayımlandıkları reklam içeren sürümler için geçerlidir.
+          yayımlandığını veya onay formunun her kullanıcıda ya da her dağıtılmış
+          ikili dosyada göründüğünü iddia etmez. SDK entegrasyonu ve UMP API
+          bağlantısı, yayımlanmış bir onay mesajı veya görünür bir onay formu ile
+          aynı şey değildir.
         </p>
         <p>
           Bazı gizlilik mesajı yapılandırmaları, yayımcı tarafından sağlanan bir
           gizlilik seçenekleri giriş noktası gerektirir. Bu giriş noktasının
           uygulamada uygulandığı sürümlerde (örneğin Ayarlar içinde) ve gizlilik
-          çerçevesinin bunun geçerli olduğunu belirttiği durumlarda, gizlilik
+          çerçevesinin bunun gerekli olduğunu belirttiği durumlarda, gizlilik
           tercihlerinizi gözden geçirmek veya değiştirmek için bunu
           kullanabilirsiniz. Kullanılabilirlik yüklü sürüme, bölgeye ve UMP
-          durumuna bağlıdır.
+          durumuna bağlıdır; gerekli değilse denetim gösterilmez.
         </p>
         <p>
           Google UMP onay mesajları, iOS’taki Apple App Tracking Transparency
